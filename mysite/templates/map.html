@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Air Pollution</title>
+</head>
+<body>
+    <center>
+        <p style="font-family: 'Comic Sans MS' ; font-size: x-large ; color: rgb(48,161,214)">
+            <b>
+                Air quality index in Poland
+            </b>
+        </p>
+            {% load static %}
+            <img src="{% static "mysite/mapa.jpg" %}" alt="Map of Poland" width="622,6" height="570,9"/>
+            <p style="font-family: 'Comic Sans MS' ; font-size: large ; color: darkblue">
+                Pomorskie &nbsp;&nbsp;{{ Measurements.pomorskie }}<br  />
+                Warmińsko-mazurskie &nbsp;&nbsp;{{ Measurements.warminskomazurskie }}<br  />
+                Zachodnio-pomorskie&nbsp;&nbsp;{{ Measurements.zachodniopomorskie }}<br  />
+                Podlaskie&nbsp;&nbsp;{{ Measurements.podlaskie }}<br  />
+                Kujawsko-pomorskie&nbsp;&nbsp;{{ Measurements.kujawskopomorskie }}<br  />
+                Wielkopolskie&nbsp;&nbsp;{{ Measurements.wielkopolskie }}<br  />
+                Mazowieckie&nbsp;&nbsp;{{ Measurements.mazowieckie }}<br  />
+                Lubuskie&nbsp;&nbsp;{{ Measurements.lubuskie }}<br  />
+                Łódzkie&nbsp;&nbsp;{{ Measurements.warminskomazurskie }}<br  />
+                Lubelskie&nbsp;&nbsp;{{ Measurements.lodzkie }}<br  />
+                Dolnośląskie&nbsp;&nbsp;{{ Measurements.dolnoslaskie }}<br  />
+                Opolskie&nbsp;&nbsp;{{ Measurements.opolskie }}<br  />
+                Śląskie&nbsp;&nbsp;{{ Measurements.slaskie }}<br  />
+                Świętokrzyskie&nbsp;&nbsp;{{ Measurements.swietokrzyskie }}<br  />
+                Podkarpackie&nbsp;&nbsp;{{ Measurements.podkarpackie }}<br  />
+                Małopolskie&nbsp;&nbsp;{{ Measurements.malopolskie }}<br  />
+            </p>
+    </center>
+</body>
+</html>

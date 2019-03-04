@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Strona umożliwia sprawdzenie jakości powietrza na różnych stacjach badawczych" />
+    <title>Air Pollution</title>
+</head>
+<body>
+   <center>
+       <p style="font-family: 'Comic Sans MS' ; font-size: xx-large ; color: rgb(48,161,214)" >
+           <b>
+               {% load static %}
+               <img src="{% static "mysite/airly.jpg" %}" alt="Airly logo" width="300" height="200"/><br  />
+               Welcome to Air Pollution!
+           </b>
+        </p>
+       <br  /><br  /><br  />
+       <p style="font-size: large ; font-family: 'Comic Sans MS' ; color: darkblue">
+           Please enter: latitude,longitude OR id of sensor OR location (ex.Cracow)
+       </p>
+
+       <form action="#" method="get">
+           <input title="Enter" type="text" value="" name="clientRequest" size="40" style="height: 25px; font-size: large"/>
+           <br  /><br  />
+           <input type="submit" class="btn" value="Search" name="Search" style="height: 70px; width: 100px; font-size: x-large"/>
+           <br  />
+           <p style="font-size: large ; font-family: 'Comic Sans MS' ; color: darkblue">
+               OR
+           </p>
+           <input type="submit" class="btn" value="Map of Poland" name="Map" style="height: 100px; width: 200px; font-size: x-large"/>
+       </form>
+   </center>
+</body>
+</html>
